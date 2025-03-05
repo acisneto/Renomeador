@@ -4,7 +4,7 @@ pushd "%~dp0"
 
 for %%f in ("*.mp4") do (
     set "fileName=%%f"
-    set "trimmedName=!fileName:~19!"
+    set "trimmedName=!fileName:~INSERTNUM!"
     ren "!fileName!" "!trimmedName!"
 )
 
